@@ -1,27 +1,27 @@
-#title {
-  background: #ff4c68;
-  color: white;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1 {
+h1,
+h2,
+#cta h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 3.5em;
   line-height: 1.5;
   font-weight: 900;
 }
 
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  font-size: 3em;
-  line-height: 1.5;
+#title {
+  background: #ff4c68;
+  color: white;
+  position: relative;
 }
+
 .container-fluid {
-  padding: 3% 15%;
+  padding: 7% 15%;
+}
+#title .container-fluid {
+  padding: 3% 15% 7%;
 }
 
 #tindog-short-description {
@@ -48,14 +48,17 @@ h2 {
 }
 
 .image-title {
+  right: 30%;
+  position: absolute;
   width: 60%;
   transform: rotate(25deg);
 }
 
 #features {
-  padding: 7% 15%;
   font-family: "Montserrat", sans-serif;
+  background: white;
   text-align: center;
+  position: relative;
 }
 
 .feature-box h3 {
@@ -78,7 +81,6 @@ h2 {
 }
 
 #testimonials {
-  padding: 7% 15%;
   text-align: center;
   background: #ef8172;
   color: white;
@@ -99,4 +101,43 @@ h2 {
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
+}
+#pricing {
+  padding: 100px;
+}
+#pricing h2 {
+  font-size: 3em;
+}
+.pricing-column {
+  padding: 3% 2%;
+}
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .image-title {
+    position: static !important;
+    transform: rotate(0) !important;
+  }
+}
+
+#cta {
+  background: #ff4c68;
+  text-align: center;
+}
+#cta h3 {
+  color: white;
+  padding: 5%;
+}
+#footer {
+  background: #fff;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+}
+#footer i {
+  padding: 0 2% 2%;
+  color: #000;
+}
+#footer a {
+  text-decoration: none;
 }
